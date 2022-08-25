@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #6FEDD6;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+button {
+    margin: 0.5rem;
+    border: 0;
+    border-radius: 50%;
+    padding: 2px;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0.75px 3px 3px 0.75px black;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+header {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-bottom: 30rem;
+    font-family: 'Fredoka One', cursive, sans-serif;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    background-color: rgba(39, 123, 192,0.55);
+    border-radius: 1rem;
+    box-shadow: 1px 3px 5px 0.75px;
+}
+
+input.searchBar {
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+    padding: 0.3rem 1rem;
+    box-shadow: 0.75px 3px 3px 0.75px black;
+    width: calc(100% - 50px);
+}
+
+.card {
+    background: rgba(39, 123, 192,0.85);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 420px;
+    margin: 1rem;
+    font-family:  'Fredoka One', cursive, sans-serif;
+    box-shadow: 0.75px 3px 3px 0.75px black;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+}
+
+.headerTitle {
+    color: #FFB200;
+    background-image: linear-gradient(black, blue, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 3px;
+}
+
+.high {
+    color:rgb(153, 12, 12);
+    margin-left: 1.5rem;
+}
+
+.low {
+    color:rgb(4, 61, 107);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
